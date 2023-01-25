@@ -11,6 +11,8 @@ jobs:
 
       steps:
         - uses: actions/checkout@v1
+        - name: install-os-dependencies 
+          run: sudo apt-get install -y cmake software-properties-common python3.8 python3-pip python3.8-dev
         - name: install-tox
           run: pip3 install tox
         - name: test-with-tox

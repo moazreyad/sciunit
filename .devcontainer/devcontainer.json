@@ -1,0 +1,7 @@
+{
+	"name": "Ubuntu",
+	"build": {
+		"dockerfile": "Dockerfile",
+		"args": { "ubuntu-22.04": "focal" }
+	}
+}
